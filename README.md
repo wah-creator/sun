@@ -13,7 +13,7 @@ A javascript library for creating games
 # Usage 
 - Create game 
 ```js
-var sunGame = new Game(canvaa, gameWidth, gameHeight)
+var sunGame = new Game(canvas, gameWidth, gameHeight)
 ```
 - Add some entitie 
 ```js
@@ -25,3 +25,17 @@ var entitie = new Entitie(sunGame, {
   x: 0, y: 0 // Velocity
 }, entityType)
 // entity types: rect, sprite 
+- Add the entity to the game 
+```js
+sunGame.addEntitie(entitie)
+```
+- Create game loop
+```js
+function gameLoop() {
+  sunGame.update()
+
+  requestAnimationFrame(gameLoop)
+}
+gameLoop()
+```
+- Enjoy your square without movement.
