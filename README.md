@@ -24,7 +24,9 @@ var entitie = new Entitie(sunGame, {
 }, {
   x: 0, y: 0 // Velocity
 }, entityType)
+
 // entity types: rect, sprite 
+```
 - Add the entity to the game 
 ```js
 sunGame.addEntitie(entitie)
