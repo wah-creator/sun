@@ -17,7 +17,7 @@ var sunGame = new Game(canvas, gameWidth, gameHeight)
 ```
 - Add some entity
 ```js
-var entitie = new Entity(sunGame, {
+var entity = new Entity(sunGame, {
   x: 0, y: 0 // Position
 }, {
   x: 30, y: 30 // Scale 
