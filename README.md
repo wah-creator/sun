@@ -15,9 +15,9 @@ A javascript library for creating games
 ```js
 var sunGame = new Game(canvas, gameWidth, gameHeight)
 ```
-- Add some entitie 
+- Add some entity
 ```js
-var entitie = new Entitie(sunGame, {
+var entitie = new Entity(sunGame, {
   x: 0, y: 0 // Position
 }, {
   x: 30, y: 30 // Scale 
@@ -29,7 +29,7 @@ var entitie = new Entitie(sunGame, {
 ```
 - Add the entity to the game 
 ```js
-sunGame.addEntitie(entitie)
+sunGame.addEntity(entity)
 ```
 - Create game loop
 ```js
